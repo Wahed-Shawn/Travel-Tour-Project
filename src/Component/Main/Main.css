@@ -1,0 +1,125 @@
+.main {
+    width: 100%;
+}
+
+.title {
+    position: relative;
+    color: hsla(0, 0%, 5%, 0.682);
+}
+
+.secContent {
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.singleDestination {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    row-gap: .9rem;
+    border-radius: 1rem;
+    background-color: hsla(0, 0%, 86%, 0.654);
+    box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.726);
+    overflow: hidden;
+}
+
+.singleDestination:hover {
+    background-color: hsla(0, 5%, 81%, 0.904);
+    box-shadow: 1px 4px 4px hsla(0, 0%, 0%, 0.726);
+    transition: .3s ease;
+}
+
+.imgDiv {
+    height: 180px;
+    width: 100%;
+    overflow: hidden;
+}
+
+img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: 2s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.cardInfo {
+    padding: 1rem;
+}
+
+.destTitle {
+    color: hsla(0, 0%, 0%, 0.781);
+    font-size: 1.3rem;
+}
+
+.continent {
+    gap: .4rem;
+}
+
+.continent .icon {
+    margin: 0;
+    color: hsla(0, 0%, 0%, 0.781);
+    font-size: 1.2rem;
+}
+
+.name {
+    color: hsla(0, 0%, 0%, 0.781);
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.fees {
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.548);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.548);
+    font-size: 1.4rem;
+    color: hsla(0, 0%, 0%, 0.781);
+}
+
+.description {
+    font-size: .9rem;
+    color: hsla(0, 0%, 0%, 0.781);
+    font-weight: 500;
+}
+
+.btn {
+    margin-top: 1.5rem;
+    color: hsla(40, 24%, 90%, 0.867);
+}
+
+.btn .icon {
+    color: hsla(40, 24%, 90%, 0.867);
+}
+
+
+@media screen and (min-width:500px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .secContent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .singleDestination {
+        height: auto;
+    }
+}
+
+@media screen and (min-width:840px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .secContent {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .singleDestination {
+        height: auto;
+    }
+}
